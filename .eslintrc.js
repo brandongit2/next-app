@@ -12,11 +12,7 @@ module.exports = {
     "import/order": [
       1,
       {
-        groups: [
-          ["builtin", "external"],
-          ["internal", "index", "object", "unknown", "type"],
-          ["parent", "sibling"],
-        ],
+        groups: [["builtin", "external"], ["index", "object", "unknown", "type"], "internal", ["parent", "sibling"]],
         pathGroups: [
           {
             pattern: "@web/**",
